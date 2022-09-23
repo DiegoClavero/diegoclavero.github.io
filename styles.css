@@ -3,15 +3,38 @@ body {
 }
 
 @keyframes text_appear {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {opacity: 0;
+        top: 60%;}
+    100% {opacity: 1;
+        top: 50%;}
 }
 
-h1 {
+@keyframes subtext_appear {
+    0% {opacity: 0;
+        top: 70%;}
+    100% {opacity: 1;
+        top: 60%;}
+}
+
+main-div {
+    height: 100%;
+    width: 100%;
+}
+
+main-div.h1 {
     color: wheat;
+    top: 50%;
+    left: 100%;
+    text-align: right;
     animation-name: text_appear;
     animation-duration: 1.5s;
 }
-p {
+main-div.p {
     color: wheat;
+    top: 60%;
+    left: 100%;
+    text-align: right;
+    animation-name: subtext-appear;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
 }

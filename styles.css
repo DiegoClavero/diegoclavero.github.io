@@ -2,39 +2,9 @@ body {
     background-color: black;
 }
 
-@keyframes text_appear {
-    from {opacity: 0
-        top: 60%;}
-    to {opacity: 1
-        top: 50%;}
+#title {
+    color: white;
 }
-
-@keyframes subtext_appear {
-    from {opacity: 0
-        top: 70%;}
-    to {opacity: 1
-        top: 60%;}
-}
-
-main-div {
-    height: 100%;
-    width: 100%;
-}
-
-main-div.h1 {
-    color: wheat;
-    top: 50%;
-    left: 100%;
-    text-align: right;
-    animation-name: text_appear;
-    animation-duration: 1.5s;
-}
-main-div.p {
-    color: wheat;
-    top: 60%;
-    left: 100%;
-    text-align: right;
-    animation-name: subtext-appear;
-    animation-duration: 1.5s;
-    animation-delay: 0.5s;
+#subtitle {
+    color: white;
 }

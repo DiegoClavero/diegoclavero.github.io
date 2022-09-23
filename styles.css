@@ -1,8 +1,16 @@
 body {
     background-color: black;
 }
+
+@keyframes text_appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 h1 {
-    background-color: black;
+    color: wheat;
+    animation-name: text_appear;
+    animation-duration: 1.5s;
 }
 p {
     color: wheat;

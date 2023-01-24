@@ -125,15 +125,10 @@ function bgLoop(){
     }
 }
 
-document.addEventListener('scroll',function(e) {
-    var newPos = window.scrollY*1/24;
-    c.style.top = newPos+"%";
-});
-
 document.addEventListener('click', function(e) {
     const container = c.getBoundingClientRect();
-    var x = parseInt((e.clientX/container.width)*cellScreenWidth);
-    var y = parseInt((e.clientY/container.height)*cellScreenWidth);
+    var x = parseInt(((e.clientX-container.left)/container.width)*cellScreenWidth);
+    var y = parseInt(((e.clientY-container.top)/container.height)*cellScreenWidth);
     var xy = [x,y];
     var exists = existsInArray(xy,cells);
     if(exists != -1){

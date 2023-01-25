@@ -4,8 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Clavero's Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <canvas id="bgCanvas" width="1000" height="1000">
@@ -14,7 +14,17 @@
         <h1 class="title">Diego Clavero</h1>
         <h2 id="day"></h2>
         <p class="subtitle">Web developer & programmer.</p>
+        <button onclick="scrollUp()" id="scrollUp">
+            <img src="picture.png" id="upArrowImg"></img>
+        </button>
+        <button onclick="scrollDown()" id="scrollDown">
+            <img src="picture.png" id="downArrowImg"></img>
+        </button>
     </div>
-    <div class="secondDiv"></div>
+    <div id="secondDiv">
+        <h1 class="title2">Who am I?</h1>
+        <h2 class="subtitle2">Hey! I'm Diego Clavero, a 16 year old developer who recently started getting into web developement.</h2>
+        <img src="picture.png" class="caroussel"></img>
+    </div>
 </body>
 </html>

@@ -152,6 +152,36 @@ document.addEventListener('keydown', function(e){
     }
 }, false);
 
-window.addEventListener('resize', function(e){
-    
+document.addEventListener('scroll', function(e){
+    var scrollPercentage = window.scrollY/window.innerHeight;
+    var upButton = document.getElementById("scrollUp");
+    var downButton = document.getElementById("scrollDown");
+    if(scrollPercentage == 0){
+        upButton.style.display = "none";
+    } else{
+        upButton.style.display = "flex";
+    }
+
+    if(scrollPercentage >= 1){
+        downButton.style.display = "none";
+    } else{
+        downButton.style.display = "flex";
+    }
+    console.log(scrollPercentage);
 }, false);
+
+function scrollUp(){
+    var scrollpercentage = window.scrollY/window.innerHeight;
+    if(scrollpercentage <= 1){
+        window.scroll({top:0,left:0,behavior:'smooth'});
+    } else if(scrollpercentage <= 2 && scrollpercentage > 1){
+        window.scroll({top:window.innerHeight,left:0,behavior:'smooth'});
+    }
+}
+
+function scrollDown(){
+    var scrollpercentage = window.scrollY/window.innerHeight;
+    if(scrollpercentage >= 0 && scrollpercentage < 1){
+        window.scroll({top:window.innerHeight,left:0,behavior:'smooth'});
+    }
+}

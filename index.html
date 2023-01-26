@@ -10,10 +10,10 @@
 <body>
     <canvas id="bgCanvas" width="1000" height="1000">
     </canvas>
-    <div class="topDiv">
-        <h1 class="title">Diego Clavero</h1>
+    <div id="titleDiv">
+        <h1 id="title">Diego Clavero</h1>
         <h2 id="day"></h2>
-        <p class="subtitle">Web developer & programmer.</p>
+        <p id="subtitle">Web developer & programmer.</p>
         <button onclick="scrollUp()" id="scrollUp">
             <img src="picture.png" id="upArrowImg"></img>
         </button>
@@ -21,10 +21,23 @@
             <img src="picture.png" id="downArrowImg"></img>
         </button>
     </div>
-    <div id="secondDiv">
-        <h1 class="title2">Who am I?</h1>
-        <h2 class="subtitle2">Hey! I'm Diego Clavero, a 16 year old developer who recently started getting into web developement.</h2>
-        <img src="picture.png" class="caroussel"></img>
+    <div id="aboutDiv">
+        <h1 id="title2">Who am I?</h1>
+        <h2 id="subtitle2">Hey! I'm Diego Clavero, a 16 year old developer who recently started getting into web developement.</h2>
+        <img src="picture.png" id="caroussel"></img>
+    </div>
+    <div id="skillsDiv">
+        <h1 id="title3">Skills</h1>
+        <h2 id="subtitle3">I know many programming languages, including C/C++, Python, JS...</h2>
+        <img src="picture.png" id="skills"></img>
+    </div>
+    <div id="projectsDiv">
+        <h1 id="title4">Projects</h1>
+        <h2 id="subtitle4">I've been working in many projects, included in the list to the right.</h2>
+    </div>
+    <div id="contactDiv">
+        <h1 id="title5">Contact</h1>
+        <h2 id="subtitle5">You can contact me via e-mail, just leave a message below!</h2>
     </div>
 </body>
 </html>

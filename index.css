@@ -38,7 +38,7 @@ body {
     top:0%;
     width:100%;
     height:10%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: #00000000;
@@ -66,16 +66,16 @@ body {
     opacity: 1;
 }
 
-.topDiv {
+#titleDiv {
     z-index:1;
     background-color: transparent;
     width:98%;
     height:100%;
 }
 
-.title {
+#title {
     position:absolute;
-    color: #CCCCCC;
+    color: #FFFFFF;
     text-align: right;
     font-size:5vw;
     bottom:0px;
@@ -87,9 +87,9 @@ body {
     user-select: none;
     z-index: 0;
 }
-.subtitle {
+#subtitle {
     position:absolute;
-    color: #CCCCCC;
+    color: #FFFFFF;
     text-align: right;
     font-size:2vw;
     bottom:0px;
@@ -119,7 +119,7 @@ body {
     user-select: none;
 }
 
-#secondDiv {
+#aboutDiv {
     z-index:1;
     padding: 0;
     width:100%;
@@ -127,9 +127,9 @@ body {
     padding-left:0px;
 }
 
-.title2{
+#title2{
     position:relative;
-    color: #CCCCCC;
+    color: #FFFFFF;
     top:25%;
     left:10%;
     font-size:5vw;
@@ -137,9 +137,9 @@ body {
     user-select: none;
 }
 
-.subtitle2{
+#subtitle2{
     position:relative;
-    color: #CCCCCC;
+    color: #FFFFFF;
     top:25%;
     left:10%;
     font-size:2.2vw;
@@ -149,7 +149,86 @@ body {
     user-select: none;
 }
 
-.caroussel{
+#caroussel{
     position:relative;
     left:70%;
+}
+
+#skillsDiv{
+    width:100%;
+    height:100%;
+}
+
+#title3{
+    position:relative;
+    top:30%;
+    color:#FFFFFF;
+    font-size: 5vw;
+    text-align: center;
+}
+
+#subtitle3{
+    position: relative;
+    top:30%;
+    left:35%;
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 2vw;
+    width:30%;
+}
+
+#skills{
+    position: relative;
+    width:60%;
+    bottom:20%;
+    left:20%;
+    z-index: -1;
+}
+
+#projectsDiv{
+    width:100%;
+    height:100%;
+}
+
+#title4{
+    position:relative;
+    top:30%;
+    right:10%;
+    color:#FFFFFF;
+    font-size: 6vw;
+    text-align: right;
+}
+
+#subtitle4{
+    position: relative;
+    top:30%;
+    left:60%;
+    color:#FFFFFF;
+    text-align: right;
+    font-size: 2vw;
+    width:30%;
+}
+
+#contactDiv{
+    width:100%;
+    height:100%;
+}
+
+#title5{
+    position:relative;
+    top:20%;
+    left:20%;
+    color:#FFFFFF;
+    font-size: 5vw;
+    text-align: left;
+}
+
+#subtitle5{
+    position:relative;
+    top:20%;
+    left:20%;
+    width:35%;
+    color:#FFFFFF;
+    font-size: 2.5vw;
+    text-align: left;
 }

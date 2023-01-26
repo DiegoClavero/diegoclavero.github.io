@@ -29,7 +29,7 @@ function domloaded(){
     c.height *= 8;
     ctx = c.getContext("2d");
 
-    ctx.fillStyle = "#242424";
+    ctx.fillStyle = "#2B2B2B";
 
     cellSize = c.width / cellScreenWidth;
     window.setInterval(bgLoop, 1000/10);
@@ -156,13 +156,13 @@ document.addEventListener('scroll', function(e){
     var scrollPercentage = window.scrollY/window.innerHeight;
     var upButton = document.getElementById("scrollUp");
     var downButton = document.getElementById("scrollDown");
-    if(scrollPercentage == 0){
+    if(scrollPercentage <= 0){
         upButton.style.display = "none";
     } else{
         upButton.style.display = "flex";
     }
 
-    if(scrollPercentage >= 1){
+    if(scrollPercentage >= 4){
         downButton.style.display = "none";
     } else{
         downButton.style.display = "flex";
@@ -176,6 +176,12 @@ function scrollUp(){
         window.scroll({top:0,left:0,behavior:'smooth'});
     } else if(scrollpercentage <= 2 && scrollpercentage > 1){
         window.scroll({top:window.innerHeight,left:0,behavior:'smooth'});
+    } else if(scrollpercentage <= 3 && scrollpercentage > 2){
+        window.scroll({top:window.innerHeight*2,left:0,behavior:'smooth'});
+    } else if(scrollpercentage <= 4 && scrollpercentage > 3){
+        window.scroll({top:window.innerHeight*3,left:0,behavior:'smooth'});
+    } else if(scrollpercentage <= 5 && scrollpercentage > 4){
+        window.scroll({top:window.innerHeight*4,left:0,behavior:'smooth'});
     }
 }
 
@@ -183,5 +189,11 @@ function scrollDown(){
     var scrollpercentage = window.scrollY/window.innerHeight;
     if(scrollpercentage >= 0 && scrollpercentage < 1){
         window.scroll({top:window.innerHeight,left:0,behavior:'smooth'});
+    } if(scrollpercentage >= 1 && scrollpercentage < 2){
+        window.scroll({top:window.innerHeight*2,left:0,behavior:'smooth'});
+    } if(scrollpercentage >= 2 && scrollpercentage < 3){
+        window.scroll({top:window.innerHeight*3,left:0,behavior:'smooth'});
+    } if(scrollpercentage >= 3 && scrollpercentage < 4){
+        window.scroll({top:window.innerHeight*4,left:0,behavior:'smooth'});
     }
 }
